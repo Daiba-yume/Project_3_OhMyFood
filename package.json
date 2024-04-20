@@ -1,0 +1,12 @@
+{
+  "name": "yume_3",
+  "version": "1.0.0",
+  "description": "Projet 3 - OhMyFood",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/accueil.scss:./css/accueil.css ./sass/restaurants.scss:./css/restaurants.css"
+  },
+  "dependencies": {
+    "sass": "^1.75.0"
+  }
+}

@@ -1,0 +1,20 @@
+/* Header */
+
+#header {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  @include box-shadow;
+  img {
+    margin: 15px;
+    width: 130px;
+  }
+  .fa-arrow-left {
+    font-size: 18px;
+    color: #353535;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+}
