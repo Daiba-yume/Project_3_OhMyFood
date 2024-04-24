@@ -2,3 +2,25 @@
 @mixin box-shadow {
   box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.2);
 }
+
+@mixin shadow {
+  box-shadow: 1px 4px 8px 0px rgba(0, 0, 0, 0.1);
+}
+
+@mixin button {
+  border: none;
+  background: linear-gradient(to bottom right, $second, $first);
+  color: $white;
+  padding: 15px 30px 15px 30px;
+  margin: 10px;
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: bold;
+  box-shadow: 1px 4px 8px 0px rgba(0, 0, 0, 0.3);
+  transition: all 400ms linear;
+  &:hover {
+    cursor: pointer;
+    background: linear-gradient(to bottom right, $first, $second);
+    box-shadow: 1px 4px 8px 0px rgba(0, 0, 0, 0.5);
+  }
+}
