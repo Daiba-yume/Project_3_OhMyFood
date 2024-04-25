@@ -6,12 +6,12 @@ body {
   font-family: "Roboto";
   font-size: 15px;
 }
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1044px) {
   body {
     max-width: 100%;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1044px) {
   body {
     max-width: 100%;
     display: flex;
@@ -139,41 +139,33 @@ a {
 #footer {
   background-color: #353535;
   display: flex;
-  flex-direction: column;
-  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
 }
-@media screen and (min-width: 768px) {
-  #footer {
-    bottom: 0px;
-  }
+#footer .footerLinks {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
-@media screen and (min-width: 768px) {
-  #footer .footerLinks {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-}
-#footer a {
+#footer .footerLinks a {
   text-decoration: none;
   color: #ffffff;
   font-size: 12px;
   line-height: 22px;
+  margin-right: 20px;
 }
-#footer div {
+#footer .footerLogo {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
 }
-#footer .logo {
+#footer .footerLogo .logo {
   color: #ffffff;
   font-size: 16px;
   font-family: "Shrikhand", cursive;
   padding-bottom: 10px;
   width: 100px;
-}
-#footer .fa-utensils {
-  height: 15px;
-  width: 15px;
 }
 
 /*# sourceMappingURL=restaurants.css.map */

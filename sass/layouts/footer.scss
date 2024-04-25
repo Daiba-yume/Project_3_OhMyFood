@@ -1,43 +1,36 @@
 /* Footer */
-
 #footer {
   background-color: $footer-bg;
   display: flex;
-  flex-direction: column;
-  padding: 20px;
-  @media screen and (min-width: 768px) {
-    bottom: 0px;
-  }
-  & .footerLinks {
-    @media screen and (min-width: 768px) {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-    }
-  }
-  a {
-    text-decoration: none;
-    color: $white;
-    font-size: 12px;
-    line-height: 22px;
-  }
-  div {
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+
+  .footerLinks {
     display: flex;
-    flex-direction: column;
-  }
-  & .footerLogo {
-    @media screen and (min-width: 768px) {
+    flex-direction: row;
+    align-items: center;
+
+    a {
+      text-decoration: none;
+      color: $white;
+      font-size: 12px;
+      line-height: 22px;
+      margin-right: 20px;
     }
   }
-  & .logo {
-    color: $white;
-    font-size: 16px;
-    font-family: "Shrikhand", cursive;
-    padding-bottom: 10px;
-    width: 100px;
-  }
-  & .fa-utensils {
-    height: 15px;
-    width: 15px;
+
+  .footerLogo {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+
+    .logo {
+      color: $white;
+      font-size: 16px;
+      font-family: "Shrikhand", cursive;
+      padding-bottom: 10px;
+      width: 100px;
+    }
   }
 }
