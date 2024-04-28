@@ -1,12 +1,13 @@
 /* Mixins */
 /* Variables */
 body {
+  max-width: 1440px;
   margin: 0px;
   padding: 0px;
   font-family: "Roboto";
   font-size: 15px;
 }
-@media screen and (min-width: 768px) and (max-width: 1044px) {
+@media screen and (min-width: 768px) and (max-width: 1440px) {
   body {
     max-width: 100%;
   }
