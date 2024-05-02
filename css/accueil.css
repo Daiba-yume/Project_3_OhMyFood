@@ -2,8 +2,7 @@
 /* Variables */
 body {
   max-width: 1440px;
-  margin: 0px;
-  padding: 0px;
+  margin: 0 auto;
   font-family: "Roboto";
   font-size: 15px;
 }
@@ -17,7 +16,6 @@ body {
     max-width: 100%;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
   }
 }
 
@@ -62,15 +60,21 @@ a {
 }
 
 /* Search */
-.search {
-  width: 100%;
+#recherche {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #eaeaea;
+}
+#recherche .search {
+  width: 8%;
   border: none;
+  outline: none;
   background-color: #eaeaea;
   margin: 0px;
   padding: 12px;
 }
-
-input.text {
+#recherche input.text {
   text-decoration: inherit;
   text-align: center;
   font-weight: bold;

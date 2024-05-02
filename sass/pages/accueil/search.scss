@@ -1,13 +1,20 @@
 /* Search */
-.search {
-  width: 100%;
-  border: none;
-  background-color: $search;
-  margin: 0px;
-  padding: 12px;
-}
-input.text {
-  text-decoration: inherit;
-  text-align: center;
-  font-weight: bold;
+#recherche {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $search;
+  .search {
+    width: 8%;
+    border: none;
+    outline: none;
+    background-color: $search;
+    margin: 0px;
+    padding: 12px;
+  }
+  input.text {
+    text-decoration: inherit;
+    text-align: center;
+    font-weight: bold;
+  }
 }
