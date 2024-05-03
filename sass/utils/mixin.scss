@@ -7,6 +7,12 @@
   box-shadow: 1px 4px 8px 0px rgba(0, 0, 0, 0.1);
 }
 
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @mixin button {
   border: none;
   background: linear-gradient(to bottom right, $second, $first);
