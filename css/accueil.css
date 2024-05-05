@@ -63,6 +63,12 @@ a {
   left: 20px;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 /* Search */
 #recherche {
   display: flex;
@@ -98,44 +104,46 @@ a {
 
 /* RESTAURANTS */
 #restaurants {
+  background-color: #f6f6f6;
+}
+#restaurants .restaurants__container {
   display: flex;
   flex-direction: column;
-  background-color: #f6f6f6;
-  padding: 35px 0px 40px 290px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  align-items: center;
+  max-width: 1400px;
+  margin: auto;
 }
-#restaurants h2 {
+#restaurants .restaurants__container h2 {
   margin: 10px 10px 0px 30px;
 }
-@media screen and (min-width: 1024px) {
-  #restaurants {
-    flex: 1;
+@media screen and (min-width: 768px) {
+  #restaurants .restaurants__container {
+    align-items: unset;
+    gap: 15px;
   }
 }
 
 .group-Card {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  width: 80%;
-  row-gap: 30px;
+  flex-direction: column;
+  width: 95%;
+  gap: 30px;
 }
 @media screen and (min-width: 768px) {
   .group-Card {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) {
   .group-Card a {
-    flex: 1 40%;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .group-Card a {
-    flex: 1 40%;
+    width: 45%;
   }
 }
 
@@ -199,30 +207,38 @@ button:hover {
 }
 
 /* Fonctionnement */
-.function {
+.function .fonctionnement {
   display: flex;
   flex-direction: column;
-  padding: 8px;
-  margin: 20px 0px 25px 0px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  align-items: center;
+  max-width: 1400px;
+  padding-left: 35px;
+  padding-right: 35px;
+  margin: auto;
 }
-.function h2 {
-  padding: 10px 10px 10px 10px;
-  margin: 0px;
+.function .fonctionnement h2 {
+  margin: 10px 10px 0px 30px;
 }
-.function a {
-  width: 230px;
+@media screen and (min-width: 768px) {
+  .function .fonctionnement {
+    align-items: unset;
+    gap: 15px;
+  }
 }
 
 .group-box {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: auto;
+  width: 100%;
+  gap: 20px;
 }
 @media screen and (min-width: 768px) {
   .group-box {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 }
 
@@ -233,7 +249,6 @@ button:hover {
   border-radius: 20px;
   box-shadow: 1px 4px 8px 0px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  margin: 15px 5px 5px 20px;
   align-items: baseline;
 }
 .box .fas {
@@ -248,12 +263,16 @@ button:hover {
 }
 
 .number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: #ffffff;
-  font-size: 11px;
+  font-size: 15px;
+  margin-left: -35px;
+  margin-right: 35px;
   background-color: #9356dc;
-  position: relative;
-  padding: 4px 7px 3px 7px;
-  left: -30px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
 }
 

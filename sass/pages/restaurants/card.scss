@@ -1,36 +1,42 @@
 /* RESTAURANTS */
 #restaurants {
-  display: flex;
-  flex-direction: column;
   background-color: #f6f6f6;
-  padding: 35px 0px 40px 290px;
-  h2 {
-    margin: 10px 10px 0px 30px;
-  }
-  @media screen and (min-width: 1024px) {
-    flex: 1;
+
+  .restaurants__container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    align-items: center;
+    max-width: 1400px;
+    margin: auto;
+    h2 {
+      margin: 10px 10px 0px 30px;
+    }
+
+    @media screen and (min-width: 768px) {
+      align-items: unset;
+      gap: 15px;
+    }
   }
 }
 .group-Card {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  width: 80%;
-  row-gap: 30px;
+  flex-direction: column;
+  width: 95%;
+  gap: 30px;
 
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
   }
 }
 .group-Card a {
-  @media screen and (min-width: 768px) and (max-width: 1024px) {
-    flex: 1 40%;
-  }
-  @media screen and (min-width: 1024px) {
-    flex: 1 40%;
+  @media screen and (min-width: 768px) {
+    width: 45%;
   }
 }
 .Card {
