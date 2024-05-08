@@ -12,8 +12,8 @@
 
 /* Menus */
 .menuContainer {
-  max-width: 74%;
-  margin-left: 230px;
+  margin-left: 10%;
+  margin-right: 10%;
   background-color: $section-bg;
   position: relative;
   margin-top: -60px;
@@ -27,16 +27,22 @@
   @include heart;
   .fa-heart {
     top: 52px;
-    padding-right: 35%;
+    padding-right: 37%;
   }
-}
-
-.Menu {
-  display: flex;
-  justify-content: center;
-  border-radius: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  .Menu {
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  @media screen and (max-width: 768px) {
+    margin: -60px 0px 0px;
+    .fa-heart {
+      top: 52px;
+      padding-right: 15px;
+    }
+  }
 }
 
 .menu {
@@ -45,35 +51,35 @@
   flex-direction: column;
   width: 50%;
   padding-left: 25%;
-}
 
-.carte {
-  display: flex;
-  flex-direction: column;
-  width: 90%;
-  box-sizing: border-box;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  @media screen and (min-width: 1044px) {
-    flex: 1 20%;
-    margin: 0px 30px 0px 30px;
-  }
-}
+  .carte {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    box-sizing: border-box;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 
-.titleList {
-  margin-bottom: 15px;
-  h3 {
-    font-weight: normal;
-    padding-bottom: 0px;
-    margin-bottom: 0px;
+    .titleList {
+      margin-bottom: 15px;
+      h3 {
+        font-weight: normal;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+      }
+      .underline {
+        height: 2px;
+        width: 18px;
+        background-color: $third;
+        padding-left: 20px;
+        margin-top: 5px;
+      }
+    }
   }
-  .underline {
-    height: 2px;
-    width: 18px;
-    background-color: $third;
-    padding-left: 20px;
-    margin-top: 5px;
+  @media screen and (max-width: 768px) {
+    width: unset;
+    padding-left: 8%;
   }
 }
 
@@ -89,9 +95,7 @@
   box-shadow: 1px 4px 8px 0px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   animation: loading-list 0.6s both;
-  @media screen and (min-width: 1044px) {
-    margin-bottom: 30px;
-  }
+
   .description {
     padding: 10px;
     display: flex;
