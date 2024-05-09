@@ -84,6 +84,11 @@ main {
   margin: 0px;
   padding: 12px;
 }
+@media screen and (max-width: 768px) {
+  #recherche .search {
+    width: unset;
+  }
+}
 #recherche input.text {
   text-decoration: inherit;
   text-align: center;

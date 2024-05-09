@@ -11,6 +11,9 @@
     background-color: $search;
     margin: 0px;
     padding: 12px;
+    @media screen and (max-width: 768px) {
+      width: unset;
+    }
   }
   input.text {
     text-decoration: inherit;

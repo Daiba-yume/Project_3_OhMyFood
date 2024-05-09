@@ -22,7 +22,8 @@
     font-family: "Shrikhand";
     font-size: 26px;
     font-weight: normal;
-    padding: 10px 10px 0px 20px;
+    padding-right: 130px;
+    padding-top: 10px;
   }
   @include heart;
   .fa-heart {
@@ -134,6 +135,12 @@
     align-items: center;
     margin-right: -75px;
     transition-duration: 0.8s;
+  }
+  &:hover > .check {
+    margin-right: 0px;
+  }
+  &:hover .fa-check-circle {
+    transition: all 0.02s;
   }
 }
 
