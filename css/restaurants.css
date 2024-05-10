@@ -233,6 +233,8 @@ a {
 }
 .list:hover .fa-check-circle {
   transition: all 0.02s;
+  opacity: unset;
+  color: #ffffff;
 }
 
 /**** BOUTON ****/
