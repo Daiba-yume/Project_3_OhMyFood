@@ -10,4 +10,4 @@ Troisième projet de la formation Openclassroom : Dynamisez une page web avec de
 - Mettre en place son environnement Front-End
 - Utiliser un système de gestion de versions pour le suivi du projet et son hébergement
 
-Lien du site : https://daiba-yume.github.io/Project_3_OhMyFood/
+Lien du site : <https://daiba-yume.github.io/Project_3_OhMyFood/>
