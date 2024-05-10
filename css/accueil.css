@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Mixins */
 /* Variables */
 body {
@@ -177,6 +178,26 @@ main {
   bottom: 30px;
   right: 30px;
 }
+.Card .far {
+  z-index: 2;
+  opacity: 1;
+}
+.Card .far:active {
+  opacity: 0;
+}
+.Card .far:active + .fas {
+  opacity: 1;
+  animation: heart-full 0.4s linear both;
+}
+.Card .fas {
+  background: linear-gradient(63deg, #ff79da 0%, #9356dc 100%);
+  background-clip: content-box;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  color: transparent;
+  opacity: 0;
+  z-index: 1;
+}
 
 .New {
   color: #008766;
@@ -350,6 +371,92 @@ button:hover {
     display: flex;
     order: 2;
     gap: 10px;
+  }
+}
+
+.spinner-box {
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  background-color: transparent;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.spinner-box .load {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+.spinner-box .load p {
+  color: #9356dc;
+  font-size: 40px;
+  font-family: "Shrikhand", cursive;
+}
+
+.O,
+.h,
+.m,
+.y,
+.f,
+.o,
+.o-2,
+.d {
+  display: inline-block;
+  opacity: 0;
+  animation: openElevator 2s forwards ease-in-out; /* Augmenter la durée de l'animation */
+}
+
+.loader {
+  width: 60px;
+  aspect-ratio: 1;
+  display: flex;
+  animation: l8-0 2s infinite steps(1);
+  margin: auto;
+}
+
+.loader::before,
+.loader::after {
+  content: "";
+  flex: 1;
+  animation: l8-1 1s infinite linear alternate, l8-2 2s infinite steps(1) -0.5s;
+}
+
+.loader::after {
+  --s: -1, -1;
+}
+
+@keyframes l8-0 {
+  0% {
+    transform: scaleX(1) rotate(0deg);
+  }
+  50% {
+    transform: scaleX(-1) rotate(-90deg);
+  }
+}
+@keyframes l8-1 {
+  0%, 5% {
+    transform: scale(var(--s, 1)) translate(0px) perspective(150px) rotateY(0deg);
+  }
+  33% {
+    transform: scale(var(--s, 1)) translate(-10px) perspective(150px) rotateX(0deg);
+  }
+  66% {
+    transform: scale(var(--s, 1)) translate(-10px) perspective(150px) rotateX(-180deg);
+  }
+  95%, 100% {
+    transform: scale(var(--s, 1)) translate(0px) perspective(150px) rotateX(-180deg);
+  }
+}
+@keyframes l8-2 {
+  0% {
+    background: #f03355;
+  }
+  50% {
+    background: #ffa516;
   }
 }
 

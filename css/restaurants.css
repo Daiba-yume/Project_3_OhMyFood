@@ -97,6 +97,26 @@ a {
   bottom: 30px;
   right: 30px;
 }
+.menuContainer .far {
+  z-index: 2;
+  opacity: 1;
+}
+.menuContainer .far:active {
+  opacity: 0;
+}
+.menuContainer .far:active + .fas {
+  opacity: 1;
+  animation: heart-full 0.4s linear both;
+}
+.menuContainer .fas {
+  background: linear-gradient(63deg, #ff79da 0%, #9356dc 100%);
+  background-clip: content-box;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  color: transparent;
+  opacity: 0;
+  z-index: 1;
+}
 .menuContainer .fa-heart {
   top: 52px;
   padding-right: 37%;
