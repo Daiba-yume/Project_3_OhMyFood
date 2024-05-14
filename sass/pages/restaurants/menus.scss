@@ -28,7 +28,7 @@
   @include heart;
   .fa-heart {
     top: 52px;
-    padding-right: 37%;
+    right: 40%;
   }
   .Menu {
     display: flex;
@@ -41,7 +41,7 @@
     margin: -60px 0px 0px;
     .fa-heart {
       top: 52px;
-      padding-right: 15px;
+      right: 20%;
     }
   }
 }
@@ -50,13 +50,14 @@
   background-color: $section-bg;
   display: flex;
   flex-direction: column;
-  width: 50%;
-  padding-left: 25%;
+  width: 80%;
+  margin: 0 auto;
 
   .carte {
     display: flex;
     flex-direction: column;
     width: 90%;
+    padding-left: 10%;
     box-sizing: border-box;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -148,9 +149,14 @@
 
 /**** BOUTON ****/
 .Order {
+  width: 80%;
+  margin: 0 auto;
   background-color: #f6f6f6;
   text-align: center;
   padding: 20px 0px 30px 0px;
+  @media screen and (max-width: 768px) {
+    width: unset;
+  }
   button {
     @include button;
   }

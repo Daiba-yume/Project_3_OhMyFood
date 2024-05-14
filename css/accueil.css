@@ -185,17 +185,20 @@ main {
   bottom: 30px;
   right: 30px;
 }
+.Card .heart-checkbox {
+  display: none;
+}
+.Card .heart-checkbox:checked + .far {
+  opacity: 0;
+}
+.Card .heart-checkbox:checked + .far + .fas {
+  opacity: 1;
+  animation: heart-full 0.4s linear both;
+}
 .Card .far {
   z-index: 2;
   opacity: 1;
   transition: opacity 0.5s ease-in-out;
-}
-.Card .far:hover {
-  opacity: 0;
-}
-.Card .far:hover + .fas {
-  opacity: 1;
-  animation: heart-full 0.4s linear both;
 }
 .Card .fas {
   background: linear-gradient(63deg, #ff79da 0%, #9356dc 100%);

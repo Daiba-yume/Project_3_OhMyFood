@@ -106,17 +106,20 @@ a {
   bottom: 30px;
   right: 30px;
 }
+.menuContainer .heart-checkbox {
+  display: none;
+}
+.menuContainer .heart-checkbox:checked + .far {
+  opacity: 0;
+}
+.menuContainer .heart-checkbox:checked + .far + .fas {
+  opacity: 1;
+  animation: heart-full 0.4s linear both;
+}
 .menuContainer .far {
   z-index: 2;
   opacity: 1;
   transition: opacity 0.5s ease-in-out;
-}
-.menuContainer .far:hover {
-  opacity: 0;
-}
-.menuContainer .far:hover + .fas {
-  opacity: 1;
-  animation: heart-full 0.4s linear both;
 }
 .menuContainer .fas {
   background: linear-gradient(63deg, #ff79da 0%, #9356dc 100%);
@@ -132,7 +135,7 @@ a {
 }
 .menuContainer .fa-heart {
   top: 52px;
-  padding-right: 37%;
+  right: 40%;
 }
 .menuContainer .Menu {
   display: flex;
@@ -147,7 +150,7 @@ a {
   }
   .menuContainer .fa-heart {
     top: 52px;
-    padding-right: 15px;
+    right: 20%;
   }
 }
 
@@ -155,13 +158,14 @@ a {
   background-color: #f6f6f6;
   display: flex;
   flex-direction: column;
-  width: 50%;
-  padding-left: 25%;
+  width: 80%;
+  margin: 0 auto;
 }
 .menu .carte {
   display: flex;
   flex-direction: column;
   width: 90%;
+  padding-left: 10%;
   box-sizing: border-box;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -252,9 +256,16 @@ a {
 
 /**** BOUTON ****/
 .Order {
+  width: 80%;
+  margin: 0 auto;
   background-color: #f6f6f6;
   text-align: center;
   padding: 20px 0px 30px 0px;
+}
+@media screen and (max-width: 768px) {
+  .Order {
+    width: unset;
+  }
 }
 .Order button {
   border: none;
