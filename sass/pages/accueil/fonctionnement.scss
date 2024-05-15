@@ -1,4 +1,5 @@
 /* Fonctionnement */
+
 .function {
   .fonctionnement {
     display: flex;
@@ -16,56 +17,58 @@
       align-items: unset;
       gap: 15px;
     }
-  }
-}
-.group-box {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  gap: 20px;
-  margin-top: 20px;
-  margin-left: 5px;
-  @media screen and (min-width: 768px) {
-    flex-direction: row;
-    justify-content: space-between;
-    margin-right: 20px;
-  }
-}
-.box {
-  display: flex;
-  flex-direction: row;
-  background-color: $section-bg;
-  border-radius: 20px;
-  margin-right: 20px;
-  @include shadow;
-  padding: 20px;
-  align-items: baseline;
-  & .fas {
-    color: $icons;
-    width: 15px;
-  }
-  &:hover {
-    background-color: lighten($first, 36%);
-    .fas {
-      color: $first;
+    .group-box {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      gap: 20px;
+      margin-top: 20px;
+      margin-left: 5px;
+      @media screen and (min-width: 768px) {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-right: 20px;
+      }
+
+      .box {
+        display: flex;
+        flex-direction: row;
+        background-color: $section-bg;
+        border-radius: 20px;
+        margin-right: 20px;
+        @include shadow;
+        padding: 20px;
+        align-items: baseline;
+        & .fas {
+          color: $icons;
+          width: 15px;
+        }
+        &:hover {
+          background-color: lighten($first, 36%);
+          .fas {
+            color: $first;
+          }
+        }
+
+        .number {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: $white;
+          font-size: 15px;
+          margin-left: -35px;
+          margin-right: 35px;
+          background-color: $first;
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+        }
+        .choice {
+          margin-left: 15px;
+          font-size: 13px;
+          font-weight: bold;
+        }
+      }
     }
   }
-}
-.number {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: $white;
-  font-size: 15px;
-  margin-left: -35px;
-  margin-right: 35px;
-  background-color: $first;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-}
-.choice {
-  margin-left: 15px;
-  font-size: 13px;
-  font-weight: bold;
 }

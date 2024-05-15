@@ -1,3 +1,5 @@
+/* Base */
+
 body {
   max-width: 1440px;
   margin: 0 auto;
@@ -15,20 +17,20 @@ body {
     display: flex;
     flex-direction: column;
   }
-}
-h1 {
-  font-size: 20px;
-  font-weight: bold;
-}
-h2 {
-  font-size: 20px;
-  font-weight: bold;
-}
-h3 {
-  font-size: 15px;
-  font-weight: bold;
-}
-a {
-  text-decoration: none;
-  color: black;
+  h1 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  h2 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  h3 {
+    font-size: 15px;
+    font-weight: bold;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
 }

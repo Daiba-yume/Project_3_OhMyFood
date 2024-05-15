@@ -1,4 +1,5 @@
 /** Banner ***/
+
 .banner {
   max-width: 100%;
   position: relative;
@@ -10,7 +11,8 @@
   }
 }
 
-/* Menus */
+/* Menus Title*/
+
 .menuContainer {
   margin-left: 10%;
   margin-right: 10%;
@@ -45,6 +47,8 @@
     }
   }
 }
+
+/* Menus */
 
 .menu {
   background-color: $section-bg;
@@ -82,67 +86,66 @@
   @media screen and (max-width: 768px) {
     width: unset;
   }
-}
-
-/**** DESCRIPTION ****/
-.list {
-  display: flex;
-  background-color: white;
-  cursor: pointer;
-  width: 100%;
-  margin-bottom: 15px;
-  box-sizing: border-box;
-  border-radius: 15px;
-  box-shadow: 1px 4px 8px 0px rgba(0, 0, 0, 0.2);
-  overflow: hidden;
-  animation: loading-list 0.6s both;
-
-  .description {
-    padding: 10px;
+  /**** DESCRIPTION ****/
+  .list {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+    background-color: white;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    box-shadow: 1px 4px 8px 0px rgba(0, 0, 0, 0.2);
     overflow: hidden;
-    flex: 1;
-    h4,
-    p {
+    animation: loading-list 0.6s both;
+
+    .description {
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       white-space: nowrap;
       text-overflow: ellipsis;
       overflow: hidden;
-      margin-block: 0px;
-      line-height: 22px;
+      flex: 1;
+      h4,
+      p {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        margin-block: 0px;
+        line-height: 22px;
+      }
+      p {
+        font-size: 13.5px;
+      }
     }
-    p {
-      font-size: 13.5px;
+    .price {
+      font-weight: bold;
+      font-size: 15px;
+      align-self: flex-end;
+      margin: 0px 38px 13px 0px;
     }
-  }
-  .price {
-    font-weight: bold;
-    font-size: 15px;
-    align-self: flex-end;
-    margin: 0px 38px 13px 0px;
-  }
-  .check {
-    font-size: 18px;
-    padding: 20px;
-    color: $white;
-    background-color: $third;
-    border-radius: 0px 15px 15px 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: -75px;
-    transition-duration: 0.8s;
-  }
-  &:hover > .check {
-    margin-right: 0px;
-  }
-  &:hover .fa-check-circle {
-    transition: all 0.02s;
-    opacity: unset;
-    color: $white;
+    .check {
+      font-size: 18px;
+      padding: 20px;
+      color: $white;
+      background-color: $third;
+      border-radius: 0px 15px 15px 0px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: -75px;
+      transition-duration: 0.8s;
+    }
+    &:hover > .check {
+      margin-right: 0px;
+    }
+    &:hover .fa-check-circle {
+      transition: all 0.02s;
+      opacity: unset;
+      color: $white;
+    }
   }
 }
 

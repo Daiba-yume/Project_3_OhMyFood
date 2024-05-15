@@ -1,3 +1,4 @@
+/* Importations de fichiers SCSS page restaurant*/
 /* Mixins */
 /**** KEYFRAME COEUR ****/
 @keyframes heart-full {
@@ -9,6 +10,7 @@
   }
 }
 /* Variables */
+/* Base */
 body {
   max-width: 1440px;
   margin: 0 auto;
@@ -31,23 +33,19 @@ body {
     flex-direction: column;
   }
 }
-
-h1 {
+body h1 {
   font-size: 20px;
   font-weight: bold;
 }
-
-h2 {
+body h2 {
   font-size: 20px;
   font-weight: bold;
 }
-
-h3 {
+body h3 {
   font-size: 15px;
   font-weight: bold;
 }
-
-a {
+body a {
   text-decoration: none;
   color: black;
 }
@@ -84,7 +82,7 @@ a {
   object-fit: cover;
 }
 
-/* Menus */
+/* Menus Title*/
 .menuContainer {
   margin-left: 10%;
   margin-right: 10%;
@@ -154,12 +152,14 @@ a {
   }
 }
 
+/* Menus */
 .menu {
   background-color: #f6f6f6;
   display: flex;
   flex-direction: column;
   width: 80%;
   margin: 0 auto;
+  /**** DESCRIPTION ****/
 }
 .menu .carte {
   display: flex;
@@ -191,9 +191,7 @@ a {
     width: unset;
   }
 }
-
-/**** DESCRIPTION ****/
-.list {
+.menu .list {
   display: flex;
   background-color: white;
   cursor: pointer;
@@ -205,7 +203,7 @@ a {
   overflow: hidden;
   animation: loading-list 0.6s both;
 }
-.list .description {
+.menu .list .description {
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -215,24 +213,24 @@ a {
   overflow: hidden;
   flex: 1;
 }
-.list .description h4,
-.list .description p {
+.menu .list .description h4,
+.menu .list .description p {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
   margin-block: 0px;
   line-height: 22px;
 }
-.list .description p {
+.menu .list .description p {
   font-size: 13.5px;
 }
-.list .price {
+.menu .list .price {
   font-weight: bold;
   font-size: 15px;
   align-self: flex-end;
   margin: 0px 38px 13px 0px;
 }
-.list .check {
+.menu .list .check {
   font-size: 18px;
   padding: 20px;
   color: #ffffff;
@@ -244,10 +242,10 @@ a {
   margin-right: -75px;
   transition-duration: 0.8s;
 }
-.list:hover > .check {
+.menu .list:hover > .check {
   margin-right: 0px;
 }
-.list:hover .fa-check-circle {
+.menu .list:hover .fa-check-circle {
   transition: all 0.02s;
   opacity: unset;
   color: #ffffff;

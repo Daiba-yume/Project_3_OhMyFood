@@ -1,3 +1,5 @@
+/* Loader */
+
 .spinner-box {
   position: fixed;
   width: 100%;
@@ -21,12 +23,6 @@
       font-family: "Shrikhand", cursive;
     }
   }
-}
-
-.load {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 @keyframes fadeOutBackground {
