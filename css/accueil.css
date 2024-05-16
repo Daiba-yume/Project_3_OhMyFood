@@ -277,12 +277,6 @@ button:hover {
   color: #7e7e7e;
   width: 15px;
 }
-.function .fonctionnement .group-box .box:hover {
-  background-color: #f4eefc;
-}
-.function .fonctionnement .group-box .box:hover .fas {
-  color: #9356dc;
-}
 .function .fonctionnement .group-box .box .number {
   display: flex;
   align-items: center;

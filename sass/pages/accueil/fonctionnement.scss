@@ -43,12 +43,6 @@
           color: $icons;
           width: 15px;
         }
-        &:hover {
-          background-color: lighten($first, 36%);
-          .fas {
-            color: $first;
-          }
-        }
 
         .number {
           display: flex;
