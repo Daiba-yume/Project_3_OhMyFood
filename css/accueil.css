@@ -78,17 +78,11 @@ body a {
   background: #eaeaea;
 }
 #recherche .search {
-  width: 8%;
   border: none;
   outline: none;
   background-color: #eaeaea;
   margin: 0px;
   padding: 12px;
-}
-@media screen and (max-width: 768px) {
-  #recherche .search {
-    width: unset;
-  }
 }
 #recherche input.text {
   text-decoration: inherit;
