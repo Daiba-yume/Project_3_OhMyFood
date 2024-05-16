@@ -49,8 +49,6 @@
 }
 
 /* Menus */
-
-/* Menus */
 .menu {
   background-color: $section-bg;
   display: flex;
@@ -147,13 +145,15 @@
     }
   }
 
-  .checkbox:checked + .list .check {
-    margin-right: 0;
-  }
+  @media screen and (max-width: 768px) {
+    .checkbox:checked + .list .check {
+      margin-right: 0;
+    }
 
-  .checkbox:checked + .list .fa-check-circle {
-    opacity: unset;
-    color: $white;
+    .checkbox:checked + .list .fa-check-circle {
+      opacity: unset;
+      color: $white;
+    }
   }
 }
 

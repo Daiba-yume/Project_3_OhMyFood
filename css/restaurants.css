@@ -153,7 +153,6 @@ body a {
 }
 
 /* Menus */
-/* Menus */
 .menu {
   background-color: #f6f6f6;
   display: flex;
@@ -247,12 +246,14 @@ body a {
   margin-right: -75px;
   transition-duration: 0.8s;
 }
-.menu .checkbox:checked + .list .check {
-  margin-right: 0;
-}
-.menu .checkbox:checked + .list .fa-check-circle {
-  opacity: unset;
-  color: #ffffff;
+@media screen and (max-width: 768px) {
+  .menu .checkbox:checked + .list .check {
+    margin-right: 0;
+  }
+  .menu .checkbox:checked + .list .fa-check-circle {
+    opacity: unset;
+    color: #ffffff;
+  }
 }
 
 /* Hover desktop*/
