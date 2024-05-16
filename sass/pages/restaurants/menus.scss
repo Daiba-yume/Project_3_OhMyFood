@@ -50,6 +50,7 @@
 
 /* Menus */
 
+/* Menus */
 .menu {
   background-color: $section-bg;
   display: flex;
@@ -86,10 +87,14 @@
   @media screen and (max-width: 768px) {
     width: unset;
   }
-  /**** DESCRIPTION ****/
+
+  .checkbox {
+    display: none;
+  }
+
   .list {
     display: flex;
-    background-color: white;
+    background-color: $white;
     cursor: pointer;
     width: 100%;
     margin-bottom: 15px;
@@ -98,6 +103,8 @@
     box-shadow: 1px 4px 8px 0px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     animation: loading-list 0.6s both;
+    position: relative;
+    transition: all 0.3s ease;
 
     .description {
       padding: 10px;
@@ -138,14 +145,28 @@
       margin-right: -75px;
       transition-duration: 0.8s;
     }
-    &:hover > .check {
-      margin-right: 0px;
-    }
-    &:hover .fa-check-circle {
-      transition: all 0.02s;
-      opacity: unset;
-      color: $white;
-    }
+  }
+
+  .checkbox:checked + .list .check {
+    margin-right: 0;
+  }
+
+  .checkbox:checked + .list .fa-check-circle {
+    opacity: unset;
+    color: $white;
+  }
+}
+
+/* Hover desktop*/
+@media screen and (min-width: 769px) {
+  .menu .list:hover .check {
+    margin-right: 0;
+  }
+
+  .menu .list:hover .fa-check-circle {
+    transition: all 0.02s;
+    opacity: unset;
+    color: $white;
   }
 }
 
@@ -153,7 +174,7 @@
 .Order {
   width: 80%;
   margin: 0 auto;
-  background-color: #f6f6f6;
+  background-color: $section-bg;
   text-align: center;
   padding: 20px 0px 30px 0px;
   @media screen and (max-width: 768px) {

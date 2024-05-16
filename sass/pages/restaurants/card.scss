@@ -1,7 +1,7 @@
 /* RESTAURANTS */
 
 #restaurants {
-  background-color: #f6f6f6;
+  background-color: $section-bg;
 
   .restaurants__container {
     display: flex;
@@ -38,7 +38,7 @@
         width: 45%;
       }
       .Card {
-        background-color: white;
+        background-color: $white;
         border-radius: 15px;
         box-shadow: 1px 4px 8px 0px rgba(0, 0, 0, 0.2);
         margin: 20px;
@@ -47,7 +47,7 @@
 
         .New {
           color: #008766;
-          background-color: #99e2d0;
+          background-color: $third;
           width: 60px;
           padding: 5px;
           text-align: center;
