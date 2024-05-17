@@ -32,6 +32,9 @@
         .fas {
           color: $icons;
           width: 15px;
+          &:hover {
+            color: $first;
+          }
         }
 
         .number {
@@ -64,6 +67,9 @@
         flex-direction: row;
         justify-content: space-between;
         margin-right: 20px;
+      }
+      .choice {
+        font-size: 13px;
       }
     }
   }

@@ -265,6 +265,9 @@ button:hover {
   color: #7e7e7e;
   width: 15px;
 }
+.function .fonctionnement .group-box .box .fas:hover {
+  color: #9356dc;
+}
 .function .fonctionnement .group-box .box .number {
   display: flex;
   align-items: center;
@@ -292,6 +295,9 @@ button:hover {
     flex-direction: row;
     justify-content: space-between;
     margin-right: 20px;
+  }
+  .function .fonctionnement .choice {
+    font-size: 13px;
   }
 }
 
