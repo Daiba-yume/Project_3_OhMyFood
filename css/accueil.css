@@ -10,7 +10,6 @@
   }
 }
 /* Variables */
-/* Base */
 body {
   max-width: 1440px;
   margin: 0 auto;
@@ -50,7 +49,6 @@ body a {
   color: black;
 }
 
-/* Header */
 #header {
   display: flex;
   justify-content: center;
@@ -81,7 +79,7 @@ body a {
   border: none;
   outline: none;
   background-color: #eaeaea;
-  margin: 0px;
+  margin: 0;
   padding: 12px;
 }
 #recherche input.text {
@@ -90,7 +88,6 @@ body a {
   font-weight: bold;
 }
 
-/* Title */
 .title {
   background-color: #f6f6f6;
   text-align: center;
@@ -232,21 +229,12 @@ button:hover {
 .function .fonctionnement {
   display: flex;
   flex-direction: column;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding: 40px 10px;
   max-width: 1400px;
-  padding-left: 55px;
-  padding-right: 10px;
   margin: auto;
 }
 .function .fonctionnement h2 {
-  margin: 10px 10px 0px 0px;
-}
-@media screen and (min-width: 768px) {
-  .function .fonctionnement {
-    align-items: unset;
-    gap: 15px;
-  }
+  margin: 10px 10px 0px 20px;
 }
 .function .fonctionnement .group-box {
   display: flex;
@@ -254,14 +242,7 @@ button:hover {
   width: 100%;
   gap: 20px;
   margin-top: 20px;
-  margin-left: 5px;
-}
-@media screen and (min-width: 768px) {
-  .function .fonctionnement .group-box {
-    flex-direction: row;
-    justify-content: space-between;
-    margin-right: 20px;
-  }
+  margin-left: 15px;
 }
 .function .fonctionnement .group-box .box {
   display: flex;
@@ -295,7 +276,19 @@ button:hover {
   font-size: 13px;
   font-weight: bold;
 }
+@media screen and (min-width: 768px) {
+  .function .fonctionnement {
+    align-items: unset;
+    gap: 15px;
+  }
+  .function .fonctionnement .group-box {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 20px;
+  }
+}
 
+/* Footer */
 .footer {
   background: #353535;
   color: #ffffff;
@@ -313,6 +306,19 @@ button:hover {
   width: 90vw;
   max-width: 490px;
 }
+.footer__container h2 {
+  color: #ffffff;
+  font-family: "Shrikhand", cursive;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+}
+.footer__container .link1,
+.footer__container .link2 {
+  display: grid;
+  gap: 7px;
+}
 @media only screen and (min-width: 1024px) {
   .footer__container {
     display: flex;
@@ -323,41 +329,15 @@ button:hover {
     height: 23px;
     gap: 30px;
   }
-}
-.footer__container h2 {
-  color: #ffffff;
-  font-family: "Shrikhand", cursive;
-  font-size: 18px;
-  font-weight: 400;
-  letter-spacing: 0.5px;
-  margin-bottom: 10px;
-}
-@media only screen and (min-width: 1024px) {
   .footer__container h2 {
     order: 3;
     margin: 0;
     margin-left: 30px;
   }
-}
-.footer__container .link1 {
-  display: grid;
-  gap: 7px;
-}
-@media only screen and (min-width: 1024px) {
-  .footer__container .link1 {
-    display: flex;
-    order: 1;
-    gap: 10px;
-  }
-}
-.footer__container .link2 {
-  display: grid;
-  gap: 7px;
-}
-@media only screen and (min-width: 1024px) {
+  .footer__container .link1,
   .footer__container .link2 {
     display: flex;
-    order: 2;
+    order: 1;
     gap: 10px;
   }
 }

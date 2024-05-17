@@ -5,13 +5,15 @@
   justify-content: center;
   align-items: center;
   background: $search;
+
   .search {
     border: none;
     outline: none;
     background-color: $search;
-    margin: 0px;
+    margin: 0;
     padding: 12px;
   }
+
   input.text {
     text-decoration: inherit;
     text-align: center;

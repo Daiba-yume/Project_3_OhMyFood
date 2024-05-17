@@ -10,7 +10,6 @@
   }
 }
 /* Variables */
-/* Base */
 body {
   max-width: 1440px;
   margin: 0 auto;
@@ -50,7 +49,6 @@ body a {
   color: black;
 }
 
-/* Header */
 #header {
   display: flex;
   justify-content: center;
@@ -70,7 +68,7 @@ body a {
   left: 20px;
 }
 
-/** Banner ***/
+/* Banner */
 .banner {
   max-width: 100%;
   position: relative;
@@ -82,7 +80,7 @@ body a {
   object-fit: cover;
 }
 
-/* Menus Title*/
+/* Menus Title */
 .menuContainer {
   margin-left: 10%;
   margin-right: 10%;
@@ -256,7 +254,7 @@ body a {
   }
 }
 
-/* Hover desktop*/
+/* Hover desktop */
 @media screen and (min-width: 769px) {
   .menu .list:hover .check {
     margin-right: 0;
@@ -298,6 +296,7 @@ body a {
   box-shadow: 1px 4px 8px 0px rgba(0, 0, 0, 0.5);
 }
 
+/* Footer */
 .footer {
   background: #353535;
   color: #ffffff;
@@ -315,6 +314,19 @@ body a {
   width: 90vw;
   max-width: 490px;
 }
+.footer__container h2 {
+  color: #ffffff;
+  font-family: "Shrikhand", cursive;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+}
+.footer__container .link1,
+.footer__container .link2 {
+  display: grid;
+  gap: 7px;
+}
 @media only screen and (min-width: 1024px) {
   .footer__container {
     display: flex;
@@ -325,41 +337,15 @@ body a {
     height: 23px;
     gap: 30px;
   }
-}
-.footer__container h2 {
-  color: #ffffff;
-  font-family: "Shrikhand", cursive;
-  font-size: 18px;
-  font-weight: 400;
-  letter-spacing: 0.5px;
-  margin-bottom: 10px;
-}
-@media only screen and (min-width: 1024px) {
   .footer__container h2 {
     order: 3;
     margin: 0;
     margin-left: 30px;
   }
-}
-.footer__container .link1 {
-  display: grid;
-  gap: 7px;
-}
-@media only screen and (min-width: 1024px) {
-  .footer__container .link1 {
-    display: flex;
-    order: 1;
-    gap: 10px;
-  }
-}
-.footer__container .link2 {
-  display: grid;
-  gap: 7px;
-}
-@media only screen and (min-width: 1024px) {
+  .footer__container .link1,
   .footer__container .link2 {
     display: flex;
-    order: 2;
+    order: 1;
     gap: 10px;
   }
 }
