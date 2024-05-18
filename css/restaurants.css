@@ -154,6 +154,14 @@ body a {
   display: flex;
   flex-direction: column;
 }
+@media screen and (min-width: 1024px) {
+  .menu {
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #f6f6f6;
+    position: relative;
+  }
+}
 
 .carte {
   display: flex;
@@ -168,7 +176,7 @@ body a {
 @media screen and (min-width: 1024px) {
   .carte {
     flex: 1 20%;
-    margin: 0px 30px 0px 30px;
+    margin-left: 5%;
   }
 }
 
@@ -206,6 +214,7 @@ body a {
 @media screen and (min-width: 1024px) {
   .list {
     margin-bottom: 30px;
+    width: 90%;
   }
 }
 .list .description {
@@ -254,7 +263,7 @@ body a {
   .list .menu {
     width: 50%;
   }
-  .list .menu .list:hover .check {
+  .list .menu .list:hover .fas {
     margin-right: 0;
   }
   .list .menu .list:hover .fa-check-circle {
