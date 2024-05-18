@@ -185,13 +185,10 @@ body a {
   bottom: 30px;
   right: 30px;
 }
-#restaurants .restaurants__container .group-Card a .Card .heart-checkbox {
-  display: none;
-}
-#restaurants .restaurants__container .group-Card a .Card .heart-checkbox:checked + .far {
+#restaurants .restaurants__container .group-Card a .Card .far:hover {
   opacity: 0;
 }
-#restaurants .restaurants__container .group-Card a .Card .heart-checkbox:checked + .far + .fas {
+#restaurants .restaurants__container .group-Card a .Card .far:hover + .fas {
   opacity: 1;
   animation: heart-full 0.4s linear both;
 }

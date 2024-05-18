@@ -59,13 +59,6 @@
   padding: 2px 10px 0px 10px;
   display: flex;
   flex-direction: column;
-  @media screen and (min-width: 1024px) {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    flex: 1;
-  }
 }
 
 .carte {
@@ -160,6 +153,9 @@
 
   /* Hover desktop */
   @media screen and (min-width: 769px) {
+    .menu {
+      width: 50%;
+    }
     .menu .list:hover .check {
       margin-right: 0;
     }
@@ -168,6 +164,9 @@
       transition: all 0.02s;
       opacity: unset;
       color: $white;
+    }
+    .list {
+      width: 10%;
     }
   }
 }

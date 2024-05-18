@@ -49,19 +49,15 @@
     right: 30px;
   }
 
-  .heart-checkbox {
-    display: none;
-
-    &:checked + .far {
+  .far {
+    &:hover {
       opacity: 0;
-    }
-
-    &:checked + .far + .fas {
-      opacity: 1;
-      animation: heart-full 0.4s linear both;
+      + .fas {
+        opacity: 1;
+        animation: heart-full 0.4s linear both;
+      }
     }
   }
-
   .far {
     z-index: 2;
     opacity: 1;

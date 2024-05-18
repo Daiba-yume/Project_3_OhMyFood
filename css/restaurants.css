@@ -102,13 +102,10 @@ body a {
   bottom: 30px;
   right: 30px;
 }
-.menuContainer .heart-checkbox {
-  display: none;
-}
-.menuContainer .heart-checkbox:checked + .far {
+.menuContainer .far:hover {
   opacity: 0;
 }
-.menuContainer .heart-checkbox:checked + .far + .fas {
+.menuContainer .far:hover + .fas {
   opacity: 1;
   animation: heart-full 0.4s linear both;
 }
@@ -156,15 +153,6 @@ body a {
   padding: 2px 10px 0px 10px;
   display: flex;
   flex-direction: column;
-}
-@media screen and (min-width: 1024px) {
-  .menu {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    flex: 1;
-  }
 }
 
 .carte {
@@ -263,6 +251,9 @@ body a {
   margin-right: 0px;
 }
 @media screen and (min-width: 769px) {
+  .list .menu {
+    width: 50%;
+  }
   .list .menu .list:hover .check {
     margin-right: 0;
   }
@@ -270,6 +261,9 @@ body a {
     transition: all 0.02s;
     opacity: unset;
     color: #ffffff;
+  }
+  .list .list {
+    width: 10%;
   }
 }
 
