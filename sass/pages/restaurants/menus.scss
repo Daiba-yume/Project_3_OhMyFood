@@ -56,132 +56,121 @@
 /* Menus */
 .menu {
   background-color: $section-bg;
+  padding: 2px 10px 0px 10px;
   display: flex;
   flex-direction: column;
-  width: 80%;
-  margin: 0 auto;
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex: 1;
+  }
+}
 
-  .carte {
+.carte {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  @media screen and (min-width: 1024px) {
+    flex: 1 20%;
+    margin: 0px 30px 0px 30px;
+  }
+}
+
+.titleList {
+  margin-bottom: 15px;
+  h2 {
+    font-weight: normal;
+    font-size: 15px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+  .underline {
+    height: 2px;
+    width: 18px;
+    background-color: $third;
+    padding-left: 20px;
+    margin-top: 5px;
+  }
+}
+
+/**** DESCRIPTION ****/
+.list {
+  display: flex;
+  background-color: white;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  border-radius: 15px;
+  box-shadow: 1px 4px 8px 0px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  animation: loading-list 0.6s both;
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 30px;
+  }
+  .description {
+    padding: 10px;
     display: flex;
     flex-direction: column;
-    width: 90%;
-    padding-left: 10%;
-    box-sizing: border-box;
+    justify-content: center;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
-
-    .titleList {
-      margin-bottom: 15px;
-
-      h3 {
-        font-weight: normal;
-        padding-bottom: 0px;
-        margin-bottom: 0px;
-      }
-
-      .underline {
-        height: 2px;
-        width: 18px;
-        background-color: $third;
-        padding-left: 20px;
-        margin-top: 5px;
-      }
-    }
-  }
-
-  @media screen and (max-width: 768px) {
-    width: unset;
-  }
-
-  .checkbox {
-    display: none;
-  }
-
-  .list {
-    display: flex;
-    background-color: $white;
-    cursor: pointer;
-    width: 100%;
-    margin-bottom: 15px;
-    box-sizing: border-box;
-    border-radius: 15px;
-    box-shadow: 1px 4px 8px 0px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    animation: loading-list 0.6s both;
-    position: relative;
-    transition: all 0.3s ease;
-
-    .description {
-      padding: 10px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+    flex: 1;
+    h3,
+    p {
       white-space: nowrap;
       text-overflow: ellipsis;
       overflow: hidden;
-      flex: 1;
-
-      h4,
-      p {
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        margin-block: 0px;
-        line-height: 22px;
-      }
-
-      p {
-        font-size: 13.5px;
-      }
+      margin-block: 0px;
+      line-height: 22px;
     }
-
-    .price {
-      font-weight: bold;
-      font-size: 15px;
-      align-self: flex-end;
-      margin: 0px 38px 13px 0px;
-    }
-
-    .check {
-      font-size: 18px;
-      padding: 20px;
-      color: $white;
-      background-color: $third;
-      border-radius: 0px 15px 15px 0px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-right: -75px;
-      transition-duration: 0.8s;
+    p {
+      font-size: 13.5px;
     }
   }
+  .price {
+    font-weight: bold;
+    font-size: 15px;
+    align-self: flex-end;
+    margin: 0px 38px 13px 0px;
+  }
+  .check {
+    font-size: 18px;
+    padding: 20px;
+    color: $white;
+    background-color: $third;
+    border-radius: 0px 15px 15px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: -75px;
+    transition-duration: 0.8s;
+  }
+  &:hover > .check {
+    margin-right: 0px;
+  }
 
-  @media screen and (max-width: 768px) {
-    .checkbox:checked + .list .check {
+  /* Hover desktop */
+  @media screen and (min-width: 769px) {
+    .menu .list:hover .check {
       margin-right: 0;
     }
 
-    .checkbox:checked + .list .fa-check-circle {
+    .menu .list:hover .fa-check-circle {
+      transition: all 0.02s;
       opacity: unset;
       color: $white;
     }
   }
 }
-
-/* Hover desktop */
-@media screen and (min-width: 769px) {
-  .menu .list:hover .check {
-    margin-right: 0;
-  }
-
-  .menu .list:hover .fa-check-circle {
-    transition: all 0.02s;
-    opacity: unset;
-    color: $white;
-  }
-}
-
 /**** BOUTON ****/
 .Order {
   width: 80%;
