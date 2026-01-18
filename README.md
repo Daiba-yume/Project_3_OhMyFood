@@ -28,7 +28,6 @@ Troisième projet de la formation Openclassroom : Dynamisez une page web avec de
 
 1. Cloner le repo `https://github.com/Daiba-yume/Project_3_OhMyFood.git`
 2. Installer les dépendances : `npm install`
-3. Lancer le projet : `npm run dev`
 
 ---
 
