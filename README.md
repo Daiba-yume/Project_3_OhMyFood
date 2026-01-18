@@ -43,4 +43,4 @@ Daïba Yume :purple_heart:
 
 ## 💮 Demo
 
-https://daiba-yume.github.io/Project_3_OhMyFood/
+[OhMyFood](https://daiba-yume.github.io/Project_3_OhMyFood/)
